@@ -1,0 +1,279 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+.container
+{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+}
+body
+{
+    
+    display: flex;
+    justify-content: left;
+    height: 100vh;
+    align-items: left;
+}
+.card
+{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px black;
+    align-items: left;
+    justify-content: left;
+    /* overflow: hidden;
+    visibility: hidden;     make the hover function with the card visibility:visible and opacity:1 */
+
+}
+img
+{
+    height: 500px;
+    width: 350px;
+    border-radius: 3px;
+    visibility: hidden;
+    overflow: hidden; 
+}
+.intro
+{   
+    height: 60px;
+    width: 350px;
+    padding: 1%;
+    box-sizing: border-box;
+    position: absolute;
+    bottom: 320px;
+    color: rgb(90, 255, 145);
+    transition: 0.5s;
+}
+p.info
+{
+    position: relative;
+    bottom: 20px;
+    font: 20px;
+    margin: 10px;
+    visibility: hidden;
+    opacity: 0;
+    color: rgb(255, 255, 255);
+}
+span
+{
+    font-weight: bold;
+    color:aquamarine;
+}
+.card:hover
+{
+    overflow:1;
+    visibility: visible;
+    cursor: pointer;
+}
+.card:hover .intro
+{
+    height:200px;  /* specifing the height of the black box (inner black box) */
+    bottom: 121px;  /* postioning the inner black box used to add text */
+    background: rgba(46, 46, 46, 0.5);
+}
+.card:hover p.info
+{
+    opacity: 1;
+    visibility: visible;
+}
+button
+{
+    justify-content: left;
+    align-items: left;
+    opacity: 0;
+    visibility: hidden;
+}
+.card:hover button
+{
+    opacity: 1;
+    visibility: visible;
+    font-size: 1.15rem;
+    padding: 10px 35px;
+    color: #030728;
+    font-weight: 500;
+    border-radius: 6px;
+    cursor: pointer;
+    background: #fff;
+    border: 1px solid transparent;
+    transition: 0.2s ease;
+}
+.t_container
+{
+ 
+ height: 100%;
+ width: 100%;
+ /*background-color: black;*/ 
+}
+.auto{
+    font-size: 35px;
+    color:#ff0000 
+}
+span
+{
+color: rgb(174, 0, 255);
+}
+
+.card:hover img
+{
+    visibility: visible;
+    opacity: 1; 
+    transition: 5s ease;
+}
+p.para{
+    height: 10px; /* Adjust as needed */
+        display: flex;
+        /* margin: 80px; */
+        align-items: center; /* Aligns items at the top */
+}
+.card:hover p
+{
+    opacity: 0;
+    visibility: hidden;
+    color: #1100ff;
+}
+/* -------------------------------------------------------------------- */
+
+.container1
+{
+    display: flex;
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(270px,1fr));
+}
+.card1
+{
+    height: 500px;
+    margin: 50px;
+    box-shadow: 5px 5px 20px /*black*/;
+    align-items: left;
+    justify-content: left;
+    border-radius: 5px;
+     overflow: hidden;
+    visibility: hidden;     /* make the hover function with the card visibility:visible and opacity:1 */
+}
+.card1:hover
+{
+    overflow:1;
+    visibility: visible;
+    cursor: pointer;
+    transition: 0.2s all;
+}
+.certificate{
+    height: 250px;
+    width: 250px;
+    border-radius: 5px;
+    visibility: visible;
+    overflow: 1;
+    align-items: center;
+    
+}
+img.emj
+{
+    height: 250px;
+    width: 250px;
+    border-radius: 3px;
+    visibility: hidden;
+    overflow: 0; 
+}
+.certificate:hover img.emj{
+    opacity: 1;
+    visibility: visible;
+    overflow: 1; 
+    transition: 5s all;
+
+}
+
+.certificate embed{
+    opacity: 1;
+    visibility: visible;
+    overflow: 1; 
+    transition: 5s all;
+}
+
+/* ------------------------------------------------------------------------------------- */
+/*^skils */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+.mian_container{
+    visibility: hidden;
+    overflow: hidden;
+    /* background: rgb(54, 54, 54); */
+    padding: 15px 9%;
+    padding-bottom: auto;
+    align-items: center;
+    /* commpent is required height and width */
+    height: 684px;
+    width: auto; 
+    
+}
+.mian_container:hover{
+    cursor: pointer;
+    visibility: visible;
+    /* overflow: visible; */
+
+ }
+.sub_container
+{   
+    float: left;
+    position: relative;
+    max-width: 250px;
+    max-height: 250px;
+    width: auto;
+    height: auto;
+    padding: 10px;
+    top: 50px;
+    margin: 5px;
+}
+.mian_container .sub_container .image_container{
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+    background: #fff;
+    text-align: center;
+    height: 190px;
+    width: 190px;
+}
+.mian_container .sub_container .image_container .skill{
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+    visibility: visible;
+    overflow: visible;
+}
+.mian_container .sub_container .image_container h3{
+    color: #1f1e1e;
+    font-size: 22px;
+    position: relative;
+    bottom: 10px;
+}
+.mian_container .sub_container .image_container p{
+    color: #777;
+    font-style: 12px;
+    line-height: 0.9;
+    position: relative;
+    bottom: 18.3px
+}
+/* todo: auto typing*/
+
+.auto_container
+{
+
+ height: 100%;
+ width: 100%;
+ /*background-color: black;*/ 
+
+}
+.auto{
+    font-size: 18px;
+    color:#ff0000 
+}
+.auto-type
+{
+color: rgb(174, 0, 255);
+}

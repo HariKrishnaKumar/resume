@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="1style.css">
+    
+    <style>
+        body {
+            background-color: #000;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+            font-family: sans-serif;
+            font-weight: 700;
+        }
+
+        .card-container {
+            width: 120%;
+            height: 800px;
+            border: 1px solid white;
+            border-radius: 5px;
+            display: flex;
+        }
+
+        .cards {
+            position: relative;
+            left: 0;
+            width: 50px;
+            border-radius: 5px;
+            padding: 8px;
+            height: auto;
+            background-color: transparent;
+            transition: 3s all;
+            flex: 1;
+            font-size: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            cursor: pointer;
+        }
+
+        .cards:nth-child(even) {
+            background:linear-gradient(#b210ff,#f9d423);
+        }
+
+        .cards:nth-child(odd) {
+            background:linear-gradient(#eece13,#b210ff);
+        }
+
+          .cards{
+            flex: 1;  cursor: pointer;
+          }
+          .cards:hover {
+            flex: 30;
+          }
+
+      .pos {
+        text-align: top;
+        color: aliceblue;
+        align-items: center;
+        /* position: fixed; */
+        /* right: -250px; */
+        }
+
+    </style>
+    <script defer src="app.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+
+<body>
+        <div class="card-container">
+            <div class="cards">             
+                <div class="pos">
+                    <p class="top-aligned">About<br></p>
+                    <div class="container">
+                    <!-- todo:Its auto typing -->
+                <div class ="auto_container">
+                    <h1 class="auto">
+                        I'am <span class="auto-type">Freelancer</span> in the field.
+                    </h1>
+                </div>
+
+
+                        <div class="card">
+                            <img src="IMG_2705.jpeg" alt="my pic">
+                             <div class="intro">
+                                <p class="para">Bring the cursor here</p>
+                                <p class="info">I'm <span>B.Hari Krishna Kumar</span> pursing BCA(Bacholars of Computer application)
+                                    Having good knoledege in webdevelopment(Full stack developer)
+                                    <form action="https://wa.me/+919449445802?text=click%20,me!">
+                                        <button type="submit">Message me</button>
+                                    </form>
+                                </p>
+                             </div>
+                        </div>
+                    </div>
+                    <!-- <p class="hobby">hobby                        At the right side 
+                            <img src="rint" alt="chess">
+                            <img src="rint" alt="e-sports">
+                    </p> -->
+                </div>
+            </div>
+            <div class="cards">
+                <div class="pos">  
+                    <p class="top-aligned">Skills<br></p>
+                    <!-- ^Skills -->
+                    <div class="mian_container">
+        
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/c++-250.png">
+                                <h3>C & C++</h3>
+                                <p>The Fundamentals of all Language</p>
+                                <br><p>knoledege: 8/10</p>
+                            </div>
+                        </div>
+                
+                        
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/java_240.png">
+                                <h3>Java</h3>
+                                <p>A essential tool or lang used in webdevelopment</p>
+                                <br><p>knoledege:6/10</p>
+                            </div>  
+                        </div>
+
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/python-240.png">
+                                <h3>PYTHON</h3>
+                                <p>A user frendly and quick easy language</p>
+                                <br><p>knoledege:8/10</p>
+                            </div>  
+                        </div>
+
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/data_science.png">
+                                <h3>Data Science</h3>
+                                <p>A advance pick-up of Python use full in industry</p>
+                                <br><p>knoledege:5/10</p>
+                            </div>  
+                        </div>
+
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/HTML_240.png">
+                                <h3>HTML 5</h3>
+                                <p>The skeleton of a web page</p>
+                                <br><p>knoledege:9/10</p>
+                            </div>  
+                        </div>
+                
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/CSS_240.png">
+                                <h3>CSS 3</h3>
+                                <p>A makeup master of the skeleton(html)</p>
+                                <br><p>knoledege:7/10</p>
+                            </div>        
+                        </div>
+                
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/javascript-240.png">
+                                <h3>Java Script</h3>
+                                <p>A action performer in the webdevelopment</p>
+                                <br><p>knoledege:7/10</p>
+                            </div>  
+                        </div>
+                
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/php-logo-20747.png">
+                                <h3>PHP</h3>
+                                <p>A industry oriented webdevelopment tool</p>
+                                <br><p>knoledege:7/10</p>
+                            </div>
+                        </div>
+
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/oracle-200.png">
+                                <h3>Oracle DB</h3>
+                                <p>SQL:accessing and manipulating databases</p>
+                                <br><p>knoledege:8/10</p>
+                            </div>
+                        </div>
+                    
+                        <div class="sub_container">
+                            <div class="image_container">
+                                <img class="skill" src="img/network.png">
+                                <h3>network</h3>
+                                <p>having basic knoledege & its essential</p>
+                                <br><p>knoledege:5/10</p>
+                            </div>
+                        </div>
+                    </div>
+                      
+                </div>
+            </div>
+                <!--todo: Its 3rd coulmn  -->
+            <div class="cards">
+                <div class="pos">
+                    <p class="top-aligned">Project & certificates<br></p>
+                    
+                    <div class="container1">
+                        <div class="card1">
+                            <div class="certificate"> 
+                            <img class="emj" src="hari emoji.webp" alt="emoji">   
+                            <!-- <embed src="pdf\Microsoft-Explore Data roles and services.pdf" type="application/pdf" height="110%"  width="75%" > -->
+                                <div class="flip-box">
+                                    <div class="flip-box-inner">
+                                      <div class="flip-box-front">
+                                        <img src="cer/m1.jpeg" alt="Front">
+                                      </div>
+                                      <div class="flip-box-back">
+                                        <h2>Certificate Avaliable in the Microsoft website</h2>
+                                        <p>Click on 👉<a href="https://learn.microsoft.com/api/achievements/share/en-us/BHariKrishnaKumar-2841/8AYHNEMW?sharingId=B3E7337269F44384">Link</a></p>
+                                      </div>
+                                    </div>
+                                  </div>
+                            </div>  
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+</body>
+
+</html>
+
+
+                        <!-- <img class="emj"src="hari emoji.webp" alt="emoji">
+                        <img class="ctf1"src="ctf1" alt="certificates 1" >
+                        <img class="ctf2"src="ctf2" alt="certificates 1">
+                        <img class="ctf3"src="ctf3" alt="certificates 1">
+                        <img class="ctf4"src="ctf4" alt="certificates 1"> -->
