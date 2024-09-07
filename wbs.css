@@ -1,0 +1,105 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap');
+*
+{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Poppins',sans-serif;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-transform: capitalize;
+    transition: .2s linear;
+}
+body
+{
+    justify-content: center;
+    background: linear-gradient(rgb(201, 62, 38),rgb(218, 161, 38),rgb(204, 201, 38),rgb(38, 201, 46),rgb(38, 201, 147));
+
+}
+/* .content{
+
+} */
+.information{
+color: yellow;
+font-weight: 100;
+}
+.container{
+    display: grid;
+            place-items: center;
+            height: 100vh;
+}
+.content{
+
+            padding: 20px;
+            background-color: black;            
+            /* linear-gradient(rgb(38, 201, 147),rgb(38, 201, 46),rgb(204, 201, 38),rgb(218, 161, 38),rgb(201, 62, 38)); */
+}
+
+@keyframes colorChange {
+    0% { color: rgb(0, 255, 0); }
+    10% { color: rgb(6, 143, 86); }
+    20% { color: rgb(255, 255, 255); }
+    30% { color: rgb(50, 221, 50); }
+    40% { color: rgb(17, 0, 255); }
+    50%{color: blue;}
+    60%{color: rgb(217, 255, 0);}
+    70%{color: rgb(0, 247, 255);}
+    80%{color: rgb(0, 255, 115);}
+    90%{color: rgb(7, 85, 13);}
+    100% { color: rgb(0, 0, 0); }
+}
+
+.mult_color{
+    animation: colorChange 5s forwards;
+}
+
+.check{
+    color: red;
+    font-size: large;
+}
+/* this is whatsapp img👇 */
+img{    
+    position: absolute;
+    bottom:75px;
+    right: 600px;
+}
+.abt{
+    position: absolute;
+    top: 160px;
+    left: 510px;
+}
+.cop{
+    position: absolute;
+    top: 240px;
+    left: 560px;
+}
+.role{
+    position: absolute;
+    top: 385.5px;
+    left: 595px;
+    
+}
+.job{
+    position: absolute;
+    top: 470px;
+    left: 570px;
+}
+.loc{
+    position: absolute;
+    top: 322px;
+    left: 485px;
+
+    
+}
+
+.submit{
+    background-color: #04AA6D; /* Green */
+    color: white;
+    text-align: center;
+    height: 50px;
+    width: 100px;
+    border-radius: 15px;
+    position: relative;
+    left: 200px;
+    bottom: -15px;
+  }
+
