@@ -4,9 +4,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Over View</title>
+    <title>Document</title>
     <link rel="stylesheet" href="1style.css">
-    
+    <!-- to secure -->
+    <script>
+        document.onkeydown = function(e) {
+    if (e.keyCode == 123) { // F12
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Ctrl+Shift+C
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+        return false;
+    }
+}
+    </script>
     <style>
         body {
             background-color: #000;
@@ -71,8 +90,8 @@
     <script defer src="app.js"></script>
     <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
 </head>
-
-<body>
+<!-- to secure -->
+<body oncontextmenu="return false" >
         <div class="card-container">
             <div class="cards">             
                 <div class="pos">

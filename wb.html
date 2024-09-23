@@ -6,24 +6,24 @@
     <title>whats app</title>
     <link rel="stylesheet" href="wbs.css">
 </head>
-<body>
+<body oncontextmenu="return false" >
     <h3 align="center" class="mult_color">Hello User This page will send the message what you enter in the text box</h3><br><br>
         <div class="container">
         <form  id="info1" class="content">
                     <label class="information" for="message">Your Name</label><br>
-                    <input type="text" class="des" id="message" name="message" required><br>
+                    <input type="text" class="des" id="message" name="message" required><img src="img/user.png" class="abt" width="40px" height="40px" ><br><br>
                     
                     <label class="information" for="cop">Company name</label><br>
-                    <input type="text" class="des" id="cop" name="cop" required><br>
+                    <input type="text" class="des" id="cop" name="cop" required><img src="img/company.png" class="cop" width="40px" height="40px"><br><br>
 
                     <label class="information" for="loc">Address</label><br>
-                    <input type="text" class="des" id="loc" name="loc" required><br>
+                    <input type="text" class="des" id="loc" name="loc" required><img src="img/map.png" class="loc" width="40px" height="35px"><br><br>
                     
                     <label class="information" for="dgi">Your Designation/Role</label><br>
-                    <input type="text" class="des" id="dgi" name="dgi" required><br>
+                    <input type="text" class="des" id="dgi" name="dgi" required><img src="img/role.png" class="role" width="55px" height="50px"><br><br>
 
                     <label class="information" for="job">JOB Avaliable For?</label><br>
-                    <input type="text" class="des" id="job" name="job" required><br><br>
+                    <input type="text" class="des" id="job" name="job" required><img src="img/job.png" class="job" width="40px" height="35px"><br><br>
                     
                     
                     <!-- <form id="info2">
@@ -31,7 +31,7 @@
                     <textarea type="text" class="des" id="des" name="des" rows="6" cols="80" required></textarea><br><br> -->
                         
                     <h4 align="center">KINDLY LOGIN TO YOUR WHAT's WEB OR WHAT's APPLICATION</h4>   
-                    <input type="checkbox" id="wb" name="wb" value="done">
+                    <img src="imgc/whatsapp.png" width="25px" height="25px"><input type="checkbox" id="wb" name="wb" value="done">
                     <label for="wb" class="check">Did you Open the Whats app?.</label><br>
 
                 <button onclick="whats()" class="submit" type="submit">Submit</button>
@@ -69,7 +69,24 @@ document.getElementById('info1').addEventListener('submit', function(event) {
             alert("if message not sent please try again");
         }
     );
-        
+// to secure
+        document.onkeydown = function(e) {
+    if (e.keyCode == 123) { // F12
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'I'.charCodeAt(0)) { // Ctrl+Shift+I
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'C'.charCodeAt(0)) { // Ctrl+Shift+C
+        return false;
+    }
+    if (e.ctrlKey && e.shiftKey && e.keyCode == 'J'.charCodeAt(0)) { // Ctrl+Shift+J
+        return false;
+    }
+    if (e.ctrlKey && e.keyCode == 'U'.charCodeAt(0)) { // Ctrl+U
+        return false;
+    }
+}
     </script>
 </body>
 </html>
